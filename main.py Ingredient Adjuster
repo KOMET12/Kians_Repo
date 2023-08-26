@@ -1,0 +1,16 @@
+user_Sandwiches_input = float(input("Please enter number of sandwiches to be made: "))
+
+Eggs = 1
+
+Bread_slices = 2.0
+
+Cheese_slices = 2
+
+Sandwiches = 1
+
+Eggs_output = (user_Sandwiches_input * Eggs) / Sandwiches
+Bread_slices_output = (user_Sandwiches_input * Bread_slices) / Sandwiches
+Cheese_output = (user_Sandwiches_input * Cheese_slices) / Sandwiches
+
+print("You need" + str(round(Eggs_output,2)) + "Eggs," + str(round(Bread_slices_output,2)) +
+    "Bread_slices, and" + str(round(Cheese_output,2)) + "Cheese_slices.")
