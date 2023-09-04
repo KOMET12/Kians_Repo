@@ -1,0 +1,40 @@
+New_student = 1
+GPA = 2.0
+Criminal_record = 1
+Six_credit_hours = 1
+Income = 2
+
+Question1 = int(input("Are you a student? If Yes, type 1. If No, type 2  "))
+if Question1 == 1:
+    print("Question 1 cleared")
+else:
+    if Question1 == 2:
+        print("You are not qualified for financial aid. ")
+
+Question2 = int(input("GPA? "))
+if Question2 >= GPA:
+    print("Question 2 is cleared")
+else:
+    if Question2 < GPA:
+        print("You are not qualified for financial aid. ")
+
+Question3 = int(input("Do you have a criminal record? If Yes, type 1. If No, type 2 "))
+if Question3 == 2:
+    print("Question 3 cleared. ")
+else:
+    if Question3 == 1:
+        print("You are not qualified for financial aid. ")
+
+Question4 = int(input("How many credit hours do you have? "))
+if Question4 >= 6:
+    print("Question 4 cleared. ")
+else:
+    if Question4 <= 5:
+        print("You are not qualified for financial aid. ")
+
+Question5 = int(float(input("How much is your income? ")))
+if Question5 <= 30000:
+    print("You are eligible for financial aid. ")
+else:
+    if Question5 >= 30000:
+        print("You are not qualified for financial aid. ")
