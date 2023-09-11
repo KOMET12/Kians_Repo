@@ -1,26 +1,20 @@
-Income = 0
-Housing_expense = 0
-Food_expense = 0
-Transportation_expense = 0
-Phone_expense = 0
-Utilities_expense = 0
-Clothing_expense = 0
+student_ticket = 5.00
 
-Income = float(input("Enter your monthly income: "))
-Housing_expense = float(input("Enter your Housing expenses: "))
-Food_expense = float(input("Enter your Food expenses: "))
-Transportation_expense = float(input("Enter your Transportation expenses: "))
-Phone_expense = float(input("Enter your Phone expenses: "))
-Utilities_expense = float(input("Enter your Utilities: "))
-Clothing_expense = float(input("Enter your Clothing expenses: "))
+verteran_ticket = 7.00
 
-Budget = Income - Housing_expense - Food_expense - Transportation_expense - Phone_expense - Utilities_expense - Clothing_expense
+sponsor_ticket = 2.00
 
-print(Housing_expense * .02, '%')
-print(Food_expense * .02, '%')
-print(Transportation_expense * .02, '%')
-print(Phone_expense * .02, '%')
-print(Utilities_expense * .02, '%')
-print(Clothing_expense * .02, '%')
+retiree_ticket = 6.00
 
-print("your balance is: $" + str(Budget))
+public_ticket = 10.00
+
+print("1.student_ticket = 5.00")
+print("2.verteran_ticket = 7.00")
+print("3.sponsor_ticket = 2.00")
+print("4.retiree_ticket = 6.00")
+print("5.public_ticket = 10.00")
+
+Ticket_type = (input("What category of tickets would you like? "))
+Total_tickets = (int(input("How many tickets? "))
+
+Print()
