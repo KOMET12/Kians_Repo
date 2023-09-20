@@ -1,19 +1,17 @@
+age1 = int(input('how old are you?'))
+retirement_age = int(input("what age you you want to retire?"))
+income = float(input("what is your income?"))
+savings_percentage = float(input("What percent of your income are you saving?"))
+savings = float(input("how much is in your savings?"))
 
-count = 99
-while (count>=):
-    if count == 2:
-        print(f"{count} bottles of beer on the wall")
-        print(f"{count} bottles of beer")
-        print(f"Take one down, pass it around")
-        print(f"{count - 1} bottle of beer on the wall\n")
-    elif count == 1:
-        print(f"{count} bottle of beer on the wall")
-        print(f"{count} bottle of beer")
-        print(f"Take one down, pass it around")
-        print(f"{count - 1} bottles of beer on the wall\n")
-    else:
-        print(f"{count} bottles of beer on the wall")
-        print(f"{count} bottles of beer")
-        print(f"Take one down, pass it around")
-        print(f"{count - 1} bottles of beer on the wall\n")
-    count = count - 1
+future_income = income
+total_savings = savings
+savings_cont = income * (savings_percentage / 100)
+
+
+for i in range(age1, retirement_age + 1):
+    total_savings = (total_savings * 0.06 + total_savings) +savings_cont
+    print(f"{i}\t\t{future_income:,.0f}\t\t{savings_cont:,.0f}\t\t\t\t{total_savings:,.0f}")
+
+    future_income = (future_income * 0.03 + future_income)
+    savings_cont = future_income * (savings_percentage / 100)
